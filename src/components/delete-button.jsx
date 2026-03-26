@@ -1,4 +1,4 @@
-export const AddButton = ({ onClick }) => (
+export const DeleteButton = ({ onClick }) => (
   <button
     onClick={onClick}
     className="pointer inline-block m-5 border-2 border-transparent"
