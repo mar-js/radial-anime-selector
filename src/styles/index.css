@@ -33,6 +33,38 @@ body {
   align-items: center;
 }
 
+.container-radial-button {
+  width: 62rem;
+  height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--gray);
+}
+
+.radial-button {
+  width: auto;
+  height: auto;
+}
+
+.radial-input {
+  display: none;
+}
+
+.radial-label {
+  cursor: pointer;
+  display: inline-block;
+  margin: .5rem;
+}
+
+.radial-label img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: fill;
+  border-radius: 50%;
+}
+
 .container-actions-button {
   width: 17rem;
   height: 15rem;
