@@ -36,8 +36,9 @@ body {
 .container-radial-button {
   width: 62rem;
   height: 60rem;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   border-radius: 50%;
   background-color: var(--gray);
@@ -46,6 +47,7 @@ body {
 .radial-button {
   width: auto;
   height: auto;
+  justify-self: center;
 }
 
 .radial-input {
