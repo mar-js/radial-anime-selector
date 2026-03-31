@@ -26,9 +26,10 @@ body {
 }
 
 main {
+  --url-bg: url(attr(data-url-bg));
   width: 100vw;
   height: 100vh;
-  background: url("/public/images/goku.png");
+  background: var(--url-bg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
