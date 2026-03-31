@@ -25,6 +25,14 @@ body {
   color: var(--black);
 }
 
+#root {
+  background: url("/public/images/goku.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -34,7 +42,7 @@ body {
 }
 
 .container section {
-  background: linear-gradient(100deg, var(--gray), var(--white));
+  background-color: transparent;
   border-radius: 50%;
 }
 
@@ -55,6 +63,7 @@ body {
   width: auto;
   height: auto;
   justify-self: center;
+  border-radius: 50%;
 }
 
 .radial-button:hover {
@@ -145,4 +154,9 @@ body {
 
 .delete-button {
   background-color: var(--red);
+}
+
+.active {
+  border-right: .5rem solid var(--white);
+  border-left: .5rem solid var(--black);
 }
