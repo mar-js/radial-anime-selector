@@ -1,3 +1,3 @@
 export const Container = ({ children }) => (
-  <main className="container">{children}</main>
+  <div className="container">{children}</div>
 );

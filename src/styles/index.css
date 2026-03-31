@@ -25,7 +25,9 @@ body {
   color: var(--black);
 }
 
-#root {
+main {
+  width: 100vw;
+  height: 100vh;
   background: url("/public/images/goku.png");
   background-position: center;
   background-size: cover;
@@ -33,7 +35,7 @@ body {
   background-attachment: fixed;
 }
 
-.container {
+section {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -41,7 +43,7 @@ body {
   align-items: center;
 }
 
-.container section {
+.container {
   background-color: transparent;
   border-radius: 50%;
 }

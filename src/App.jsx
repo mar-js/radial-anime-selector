@@ -5,12 +5,14 @@ import { DataProvider } from './providers';
 
 export const App = () => (
   <DataProvider>
-    <Container>
+    <main>
       <section>
-        <ContainerRadialButton>
-          <ContainerActionsButton />
-        </ContainerRadialButton>
+        <Container>
+          <ContainerRadialButton>
+            <ContainerActionsButton />
+          </ContainerRadialButton>
+        </Container>
       </section>
-    </Container>
+    </main>
   </DataProvider>
 );
