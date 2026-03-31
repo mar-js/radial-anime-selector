@@ -1,5 +1,5 @@
 export const RadialButton = ({ id, name, image }) => (
-  <div className="radial-button">
+  <div className="radial-button" ariaLabel={name}>
     <input
       type="radio"
       id={`opcion-${id}`}
