@@ -5,9 +5,11 @@ import { ContainerRadialButton } from './components/container-radial-button';
 export const App = () => {
   return (
     <Container>
-      <ContainerRadialButton>
-        <ContainerActionsButton />
-      </ContainerRadialButton>
+      <section>
+        <ContainerRadialButton>
+          <ContainerActionsButton />
+        </ContainerRadialButton>
+      </section>
     </Container>
   );
 };
