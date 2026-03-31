@@ -50,6 +50,22 @@ body {
   justify-self: center;
 }
 
+.radial-button[ariaLabel="Goku"] {
+  grid-area: 1 / 2;
+}
+
+.radial-button[ariaLabel="Naruto"] {
+  grid-area: 2 / 3;
+}
+
+.radial-button[ariaLabel="Luffy"] {
+  grid-area: 3 / 2;
+}
+
+.radial-button[ariaLabel="Ichigo"] {
+  grid-area: 2 / 1;
+}
+
 .radial-input {
   display: none;
 }
@@ -58,6 +74,11 @@ body {
   cursor: pointer;
   display: inline-block;
   margin: .5rem;
+}
+
+.container-radial-children {
+  grid-area: 2 / 2;
+  justify-self: center;
 }
 
 .radial-label img {
