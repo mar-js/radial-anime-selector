@@ -1,6 +1,7 @@
 import { Container } from './components/container';
 import { ContainerActionsButton } from './components/container-actions-button';
 import { ContainerRadialButton } from './components/container-radial-button';
+import { useData } from './contexts';
 import { DataProvider } from './providers';
 
 export const App = () => {
