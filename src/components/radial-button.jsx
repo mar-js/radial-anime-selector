@@ -1,5 +1,8 @@
 export const RadialButton = ({ id, name, image }) => (
-  <div className="radial-button" ariaLabel={name}>
+  <div
+    className={`radial-button ${name === 'Goku' ? 'active' : ''}`}
+    ariaLabel={name}
+  >
     <input
       type="radio"
       id={`opcion-${id}`}
