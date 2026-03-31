@@ -3,16 +3,20 @@ import { ContainerActionsButton } from './components/container-actions-button';
 import { ContainerRadialButton } from './components/container-radial-button';
 import { DataProvider } from './providers';
 
-export const App = () => (
-  <DataProvider>
-    <main>
-      <section>
-        <Container>
-          <ContainerRadialButton>
-            <ContainerActionsButton />
-          </ContainerRadialButton>
-        </Container>
-      </section>
-    </main>
-  </DataProvider>
-);
+export const App = () => {
+  const { data } = useData();
+
+  return (
+    <DataProvider>
+      <main data-url-bg={`/public/${data.image}`}>
+        <section>
+          <Container>
+            <ContainerRadialButton>
+              <ContainerActionsButton />
+            </ContainerRadialButton>
+          </Container>
+        </section>
+      </main>
+    </DataProvider>
+  );
+};
