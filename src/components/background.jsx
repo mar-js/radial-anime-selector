@@ -10,5 +10,5 @@ export const Background = ({ children }) => {
       .style.setProperty('--url-bg', `url(${data.image})`);
   }, [data]);
 
-  return <main data-url-bg={`${data.image}`}>{children}</main>;
+  return <main data-url-bg={data.image}>{children}</main>;
 };
