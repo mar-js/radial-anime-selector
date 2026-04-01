@@ -7,7 +7,7 @@ export const ContainerRadialButton = ({ children }) => {
   let offsetX = 0;
   let offsetY = 0;
 
-  const alMover = useCallback(
+  const handleMove = useCallback(
     (e) => {
       const x = e.clientX - offsetX - 200;
       const y = e.clientY - offsetY - 200;
@@ -24,16 +24,16 @@ export const ContainerRadialButton = ({ children }) => {
       offsetX = e.clientX - rect.left - 200;
       offsetY = e.clientY - rect.top - 200;
 
-      document.addEventListener('pointermove', alMover);
+      document.addEventListener('pointermove', handleMove);
       document.addEventListener(
         'pointerup',
         () => {
-          document.removeEventListener('pointermove', alMover);
+          document.removeEventListener('pointermove', handleMove);
         },
         { once: true },
       );
     });
-  }, [alMover, offsetX, offsetY]);
+  }, [handleMove, offsetX, offsetY]);
 
   return (
     <div ref={ref} className="container-radial-button">
