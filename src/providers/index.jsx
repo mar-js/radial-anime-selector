@@ -3,10 +3,13 @@ import { DataContext } from '../contexts';
 import { DATA } from '../mocks';
 
 export const DataProvider = ({ children }) => {
-  const [data, setData] = useState(DATA[0]);
+  const storedData = localStorage.getItem('data');
+  const initialData = storedData ? JSON.parse(storedData) : DATA[0];
+  const [data, setData] = useState(initialData);
 
   const handleData = (newData) => {
     setData(newData);
+    localStorage.setItem('data', JSON.stringify(newData));
   };
 
   const VALUE = {
