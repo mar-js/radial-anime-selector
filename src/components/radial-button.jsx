@@ -4,12 +4,12 @@ export const RadialButton = ({ id, name, image }) => {
   const { data, handleData } = useData();
 
   const handleClick = () => {
-    handleData(name);
+    handleData({ id, name, image });
   };
 
   return (
     <div
-      className={`radial-button ${name === data ? 'active' : ''}`}
+      className={`radial-button ${name === data.name ? 'active' : ''}`}
       ariaLabel={name}
     >
       <input
