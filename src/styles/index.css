@@ -160,6 +160,6 @@ section {
 }
 
 .active {
-  border-right: .5rem solid var(--white);
-  border-left: .5rem solid var(--black);
+  border-inline: 1rem solid var(--black);
+  border-block: 1rem solid transparent;
 }
