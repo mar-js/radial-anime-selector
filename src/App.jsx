@@ -7,13 +7,11 @@ import { DataProvider } from './providers';
 export const App = () => (
   <DataProvider>
     <Background>
-      <section>
-        <Container>
-          <ContainerRadialButton>
-            <ContainerActionsButton />
-          </ContainerRadialButton>
-        </Container>
-      </section>
+      <Container>
+        <ContainerRadialButton>
+          <ContainerActionsButton />
+        </ContainerRadialButton>
+      </Container>
     </Background>
   </DataProvider>
 );
