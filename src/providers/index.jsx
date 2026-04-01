@@ -1,17 +1,13 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useState } from 'react';
 import { DataContext } from '../contexts';
 import { DATA } from '../mocks';
 
 export const DataProvider = ({ children }) => {
-  const [data, setData] = useState({});
+  const [data, setData] = useState(DATA[0]);
 
-  const handleData = useCallback((newData) => {
+  const handleData = (newData) => {
     setData(newData);
-  }, []);
-
-  useEffect(() => {
-    handleData([DATA[0]]);
-  }, [handleData]);
+  };
 
   const VALUE = {
     data,
