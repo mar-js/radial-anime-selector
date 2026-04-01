@@ -59,6 +59,8 @@ main {
 }
 
 .radial-button {
+  position: relative;
+  z-index: 1000;
   width: auto;
   height: auto;
   justify-self: center;
@@ -96,6 +98,8 @@ main {
 }
 
 .container-radial-children {
+  position: relative;
+  z-index: 1000;
   grid-area: 2 / 2;
   justify-self: center;
 }
